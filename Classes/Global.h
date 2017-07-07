@@ -3,8 +3,8 @@
 const int pkWidth = 71;//牌的宽
 const int pkHeight = 96;//牌的高
 const int pkJianJu = 20;//牌与牌之间的间距
-//花色
-enum HuaSe	
+						//花色
+enum HuaSe
 {
 	HeiTao = 0,
 	HongTao,
@@ -16,8 +16,8 @@ enum HuaSe
 //牌号
 enum PaiHao
 {
-	San = 0,Si,Wu,Liu,Qi,Ba,Jiu,Shi,ShiYi,ShiEr,ShiSan,Yi,Er,XiaoGui,DaGui,
-	PaiHaoBM=2 //牌号背面
+	San = 0, Si, Wu, Liu, Qi, Ba, Jiu, Shi, ShiYi, ShiEr, ShiSan, Yi, Er, XiaoGui, DaGui,
+	PaiHaoBM = 2 //牌号背面
 };
 //标签
 enum BiaoQian
@@ -43,7 +43,7 @@ enum CARD_TYPE
 	AIRCRAFT_SINGLE_CARD,	//飞机带单牌-
 	AIRCRAFT_DOBULE_CARD,	//飞机带对子-
 	ERROR_CARD				//错误的牌型
-} ;
+};
 struct CRAD_INDEX//分析飞机，四带用
 {
 	std::vector<int> single_index;//单张
